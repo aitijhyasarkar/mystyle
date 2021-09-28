@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6926b17386.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+            <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    <!-------------------------------contact----------------------------->
+    <div class="container1">
+        <h1>Contact With Us</h1>
+        <p>We would love to respond to your queries and help you succeed.<br>Feel free to get in touch with us.</p>
+    </div>
+    <div class="contact-box">
+        <div class="contact-left">
+            <h3>Send Your request</h3>
+            <form>
+                <div class="input-row">
+                    <div class="input-group">
+                        <lebel>Name</lebel>
+                        <input type="text" placeholder="Aitijhya Sarkar">
+                    </div>
+                    <div class="input-group">
+                        <lebel>Phone</lebel>
+                        <input type="text" placeholder="+91 0123456789">
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="input-group">
+                        <lebel>Email</lebel>
+                        <input type="email" placeholder="aiti.patiram@gmail.com">
+                    </div>
+                    <div class="input-group">
+                        <lebel>Subject</lebel>
+                        <input type="text" placeholder="Subject">
+                    </div>
+                </div>
+                <lebel>Message</lebel>
+                <textarea rows="5" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn">SEND</button>
+            </form>
+        </div>
+        <div class="contact-right">
+            <h3>Reach Us</h3>
+            <table>
+                <tr>
+                    <td>Email</td>
+                    <td>contactus@mystyle.com</td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td>+91 0123456789</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>Mauza Ranabhutia, Techno City<br>Garia, West Bengal 700152</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!---------------footer--------------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Experience mystyle app on mobile</p>
+                    <div class="app-logo">
+                        <a href="https://play.google.com/store/apps/details?id=com.mystyleapp.com"><img
+                                src="play-store.png"></a>
+                        <a href="https://apps.apple.com/in/app/my-style-app/id1530015340"><img src="app-store.png"></a>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="logo.png">
+                    <p>Style in your own way</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="https://www.grabon.in/iwearmystyle-coupons/">Coupons</a></li>
+                        <li><a href="http://www.my-style-blog.com/">Blog Post</a></li>
+                        <li><a href="https://www.mystylecollective.com/pages/exchange-and-return-policy">Return
+                                Policy</a></li>
+                        <li><a href="https://www.stylemyle.com/info/affiliate-program">Join Affiliate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/MyStyle.Co.In/">Facebook</a></li>
+                        <li><a href="https://twitter.com/needmystyle?lang=en">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/mystyle__official/?hl=en">Instagram</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCU926aALf4XI_LJyDiUiMgQ">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">&#169; 2021 mystyle.html All rights reserved.</p>
+        </div>
+    </div>
+    <!---------------js for toggle menu------------------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px")
+                MenuItems.style.maxHeight = "200px";
+            else
+                MenuItems.style.maxHeight = "0px"
+        }
+    </script>
+    <!-------------js for toogle form----------------------------->
+    <script>
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var Indicator = document.getElementById("Indicator");
+        function register() {
+            RegForm.style.transform = "translatex(0px)";
+            LoginForm.style.transform = "translatex(0px)";
+            Indicator.style.transform = "translatex(100px)";
+        }
+        function login() {
+            RegForm.style.transform = "translatex(300px)";
+            LoginForm.style.transform = "translatex(300px)";
+            Indicator.style.transform = "translatex(0px)";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6926b17386.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+            <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    <!---------------single product details------------------->
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="gallery-1.webp" width="100%" id="productImg">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="gallery-1.webp" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="gallery-2.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="gallery-3.webp" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="gallery-4.webp" width="100%" class="small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <p>Home / Kurtas</p>
+                <h1>Women Sea Green & White Printed Straight Kurta</h1>
+                <h4>Rs. 490</h4>
+                <select>
+                    <option>Select Size</option>
+                    <option>XXL</option>
+                    <option>XL</option>
+                    <option>Large</option>
+                    <option>Medium</option>
+                    <option>Small</option>
+                </select>
+                <input type="number" value="1">
+                <a href="" class="btn">Add To Cart</a>
+                <h3>Product Details <i class="fas fa-indent"></i></h3>
+                <br>
+                <p>This stylish kurta from AHIKA will take your personal style to new heights. Sport this green piece
+                    with studded flats and minimal jewellery for a simple yet stunning evening ensemble.</p>
+            </div>
+        </div>
+    </div>
+    <!---------title----------------------------->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <a href=""><p>View More</p></a>
+        </div>
+    </div>
+    <!---------------------------------products---------------------------->
+    <div class="small-container">
+        <div class="row">
+            <div class="col-4">
+                <img src="gallery-5.jpg">
+                <h4>Women Kurta</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>Rs. 1079</p>
+            </div>
+            <div class="col-4">
+                <img src="gallery-6.webp">
+                <h4>Women Kurta</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>Rs. 694</p>
+            </div>
+            <div class="col-4">
+                <img src="gallery-7.webp">
+                <h4>Women Kurta</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>Rs. 999</p>
+            </div>
+            <div class="col-4">
+                <img src="gallery-8.webp">
+                <h4>Women Kurta</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>Rs. 649</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!---------------footer--------------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Experience mystyle app on mobile</p>
+                    <div class="app-logo">
+                        <a href="https://play.google.com/store/apps/details?id=com.mystyleapp.com"><img
+                                src="play-store.png"></a>
+                        <a href="https://apps.apple.com/in/app/my-style-app/id1530015340"><img src="app-store.png"></a>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="logo.png">
+                    <p>Style in your own way</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="https://www.grabon.in/iwearmystyle-coupons/">Coupons</a></li>
+                        <li><a href="http://www.my-style-blog.com/">Blog Post</a></li>
+                        <li><a href="https://www.mystylecollective.com/pages/exchange-and-return-policy">Return
+                                Policy</a></li>
+                        <li><a href="https://www.stylemyle.com/info/affiliate-program">Join Affiliate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/MyStyle.Co.In/">Facebook</a></li>
+                        <li><a href="https://twitter.com/needmystyle?lang=en">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/mystyle__official/?hl=en">Instagram</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCU926aALf4XI_LJyDiUiMgQ">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">&#169; 2021 mystyle.html All rights reserved.</p>
+        </div>
+    </div>
+    <!---------------js for toggle menu------------------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px")
+                MenuItems.style.maxHeight = "200px";
+            else
+                MenuItems.style.maxHeight = "0px"
+        }
+    </script>
+    <!----------------js for product gallery------------------------->
+    <script>
+        var productImg = document.getElementById("productImg");
+        var smallImg = document.getElementsByClassName("small-img");
+        for (let i = 0; i < 4; i++) {
+            smallImg[i].onclick = function () {
+                productImg.src = smallImg[i].src;
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6926b17386.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="logo.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Let Us Pick The Best Fit For YOU...</h1>
+                    <p>Affordable prices, best quality shopping over 500+ styles and categories.<br>
+                        Go easy, go online shopping for best quality latest apparels at low prices!
+                    </p>
+                    <a href="" class="btn">Explore Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="image1.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------featured categories----------->
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="category-1.webp">
+                </div>
+                <div class="col-3">
+                    <img src="category-2.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="category-3.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------featured products----------->
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="product-details.html"><img src="product-1.webp"></a>
+                <a href="product-details.html">
+                    <h4>Straight Kurta</h4>
+                </a>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>Rs. 490</p>
+            </div>
+            <div class="col-4">
+                <img src="product-2.webp">
+                <h4>IDP Sneakers</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>Rs. 1749</p>
+            </div>
+            <div class="col-4">
+                <img src="product-3.webp">
+                <h4>Casual Shirt</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>Rs. 714</p>
+            </div>
+            <div class="col-4">
+                <img src="product-4.webp">
+                <h4>Women Flats</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>Rs. 674</p>
+            </div>
+        </div>
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="product-5.webp">
+                <h4>Wedge Sandals</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>Rs. 499</p>
+            </div>
+            <div class="col-4">
+                <img src="product-6.jpg">
+                <h4>Men T-shirt</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>Rs. 399</p>
+            </div>
+            <div class="col-4">
+                <img src="product-7.webp">
+                <h4>Sneakers</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>Rs. 895</p>
+            </div>
+            <div class="col-4">
+                <img src="product-8.webp">
+                <h4>Straight Kurta</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>Rs. 899</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="product-9.webp">
+                <h4>Top with Skirt</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>Rs. 2799</p>
+            </div>
+            <div class="col-4">
+                <img src="product-10.webp">
+                <h4>Sneakers</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>Rs. 725</p>
+            </div>
+            <div class="col-4">
+                <img src="product-11.webp">
+                <h4>Quilted Pumps</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Rs. 1479</p>
+            </div>
+            <div class="col-4">
+                <img src="product-12.jpg">
+                <h4>Wrap Top</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>Rs. 1399</p>
+            </div>
+        </div>
+    </div>
+    <!------------------offer-------------------------->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="exclusive.png" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>Exclusively Available on mystyle</p>
+                    <h1>CAT Unisex Black Solid Messenger Bag</h1>
+                    <small>Add a touch of luxe to your personality by carrying this stylish messenger bag. Elegant and
+                        functional, team it with your casual attire and get loaded with compliments.</small><br>
+                    <a href="" class="btn">Buy Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------testimonial----------------->
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fas fa-quote-left"></i>
+                    <p>I bought a pair of kurtis from mystyle a couple of weeks ago and they are too good. The material
+                        is soft and I feel comfortable in it. They are of the right size and there is no problem after
+                        the first wash. My kurtis came earlier than the anticipated date and I am happy about this.</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <img src="user-1.jpeg">
+                    <h3>Ranu Mandal</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fas fa-quote-left"></i>
+                    <p>mystyle can always count me in as a loyal customer of theirs. Ordered a blue and white stripped
+                        cut sleeve dress for my weekend at the beach.
+
+                        And I am absolutely loving the soft and fresh fabric against my skin! And this dress I can wear
+                        to many more occasions, so the fact that I bought this at pretty cheap price really makes me
+                        happy! And even the size and shape matched my body really well. I even received it a day early
+                        than the estimated time on the website. Absolutely loving this dress!</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <img src="user-2.jpeg">
+                    <h3>Madan Laal</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fas fa-quote-left"></i>
+                    <p>I have purchased things from mystyle a lot of times like I am now used to it for online shopping.
+                        It has reasonable prices with many offers too. Fast delivery, trusted products, good quality all
+                        of it at one place, its just brilliant!!</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <img src="user-3.jpeg">
+                    <h3>Chandni Begum</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------brands------------------------->
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="logo-godrej.png">
+                </div>
+                <div class="col-5">
+                    <img src="logo-oppo.png">
+                </div>
+                <div class="col-5">
+                    <img src="logo-coca-cola.png">
+                </div>
+                <div class="col-5">
+                    <img src="logo-paypal.png">
+                </div>
+                <div class="col-5">
+                    <img src="logo-philips.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------footer--------------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Experience mystyle app on mobile</p>
+                    <div class="app-logo">
+                        <a href="https://play.google.com/store/apps/details?id=com.mystyleapp.com"><img
+                                src="play-store.png"></a>
+                        <a href="https://apps.apple.com/in/app/my-style-app/id1530015340"><img src="app-store.png"></a>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="logo.png">
+                    <p>Style in your own way</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="https://www.grabon.in/iwearmystyle-coupons/">Coupons</a></li>
+                        <li><a href="http://www.my-style-blog.com/">Blog Post</a></li>
+                        <li><a href="https://www.mystylecollective.com/pages/exchange-and-return-policy">Return
+                                Policy</a></li>
+                        <li><a href="https://www.stylemyle.com/info/affiliate-program">Join Affiliate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/MyStyle.Co.In/">Facebook</a></li>
+                        <li><a href="https://twitter.com/needmystyle?lang=en">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/mystyle__official/?hl=en">Instagram</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCU926aALf4XI_LJyDiUiMgQ">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">&#169; 2021 mystyle.html All rights reserved.</p>
+        </div>
+    </div>
+    <!---------------js for toggle menu------------------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px")
+                MenuItems.style.maxHeight = "200px";
+            else
+                MenuItems.style.maxHeight = "0px"
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6926b17386.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+            <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>All Products</h2>
+            <select>
+                <option>Default Sorting</option>
+                <option>Sort by price</option>
+                <option>Sort by popularity</option>
+                <option>Sort by rating</option>
+                <option>Sort by sale</option>
+            </select>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <a href="product-details.html"><img src="product1-1.webp"></a>
+                <a href="product-details.html">
+                    <h4>Straight Kurta</h4>
+                </a>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>Rs. 490</p>
+            </div>
+            <div class="col-4">
+                <img src="product1-2.webp">
+                <h4>Straight Kurta</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>Rs. 490</p>
+            </div>
+            <div class="col-4">
+                <img src="product1-3.jpg">
+                <h4>Solid Denim Jacket</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>Rs. 4199</p>
+            </div>
+            <div class="col-4">
+                <img src="product1-4.webp">
+                <h4>Pinstriped Kurta</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>Rs. 1349</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="product1-5.webp">
+                <h4>Top</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>Rs. 1499</p>
+            </div>
+            <div class="col-4">
+                <img src="product1-6.webp">
+                <h4>Floral Printed Saree</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>Rs. 1849</p>
+            </div>
+            <div class="col-4">
+                <img src="product1-7.webp">
+                <h4>Embroidered Saree</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>Rs. 2479</p>
+            </div>
+            <div class="col-4">
+                <img src="product1-8.webp">
+                <h4>Floral Mini Dress</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>Rs. 959</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="product-9.webp">
+                <h4>Asymmetric Kurta</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>Rs. 419</p>
+            </div>
+            <div class="col-4">
+                <img src="product1-10.webp">
+                <h4>Anarkali Kurta</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>Rs. 2639</p>
+            </div>
+            <div class="col-4">
+                <img src="product1-11.webp">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>Rs. 835</p>
+            </div>
+            <div class="col-4">
+                <img src="product1-12.webp">
+                <h4>Ethnic Printed Top</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>Rs. 699</p>
+            </div>
+        </div>
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594</span>
+
+        </div>
+    </div>
+    <!---------------footer--------------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Experience mystyle app on mobile</p>
+                    <div class="app-logo">
+                        <a href="https://play.google.com/store/apps/details?id=com.mystyleapp.com"><img
+                                src="play-store.png"></a>
+                        <a href="https://apps.apple.com/in/app/my-style-app/id1530015340"><img src="app-store.png"></a>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="logo.png">
+                    <p>Style in your own way</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="https://www.grabon.in/iwearmystyle-coupons/">Coupons</a></li>
+                        <li><a href="http://www.my-style-blog.com/">Blog Post</a></li>
+                        <li><a href="https://www.mystylecollective.com/pages/exchange-and-return-policy">Return
+                                Policy</a></li>
+                        <li><a href="https://www.stylemyle.com/info/affiliate-program">Join Affiliate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/MyStyle.Co.In/">Facebook</a></li>
+                        <li><a href="https://twitter.com/needmystyle?lang=en">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/mystyle__official/?hl=en">Instagram</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCU926aALf4XI_LJyDiUiMgQ">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">&#169; 2021 mystyle.html All rights reserved.</p>
+        </div>
+    </div>
+    <!---------------js for toggle menu------------------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px")
+                MenuItems.style.maxHeight = "200px";
+            else
+                MenuItems.style.maxHeight = "0px"
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6926b17386.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+            <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    <!-----------------cart items details---------------->
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="buy-1.jpg">
+                        <div>
+                            <p>Collar T-shirt</p>
+                            <small>Price: Rs. 1749</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>Rs. 1749</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="buy-2.webp">
+                        <div>
+                            <p>Running Shoes</p>
+                            <small>Price: Rs. 3999</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>Rs. 3999</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="buy-3.webp">
+                        <div>
+                            <p>Regular Checked Shirt</p>
+                            <small>Price: Rs. 2199</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>Rs. 2199</td>
+            </tr>
+        </table>
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>Rs. 7949</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>Rs. 954</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>Rs. 8903</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!---------------footer--------------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Experience mystyle app on mobile</p>
+                    <div class="app-logo">
+                        <a href="https://play.google.com/store/apps/details?id=com.mystyleapp.com"><img
+                                src="play-store.png"></a>
+                        <a href="https://apps.apple.com/in/app/my-style-app/id1530015340"><img src="app-store.png"></a>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="logo.png">
+                    <p>Style in your own way</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="https://www.grabon.in/iwearmystyle-coupons/">Coupons</a></li>
+                        <li><a href="http://www.my-style-blog.com/">Blog Post</a></li>
+                        <li><a href="https://www.mystylecollective.com/pages/exchange-and-return-policy">Return
+                                Policy</a></li>
+                        <li><a href="https://www.stylemyle.com/info/affiliate-program">Join Affiliate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/MyStyle.Co.In/">Facebook</a></li>
+                        <li><a href="https://twitter.com/needmystyle?lang=en">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/mystyle__official/?hl=en">Instagram</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCU926aALf4XI_LJyDiUiMgQ">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">&#169; 2021 mystyle.html All rights reserved.</p>
+        </div>
+    </div>
+    <!---------------js for toggle menu------------------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px")
+                MenuItems.style.maxHeight = "200px";
+            else
+                MenuItems.style.maxHeight = "0px"
+        }
+    </script>
+</body>
+
+</html>
